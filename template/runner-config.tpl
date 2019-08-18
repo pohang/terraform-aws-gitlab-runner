@@ -21,6 +21,7 @@ check_interval = 0
     volumes = ${runners_volumes}
     shm_size = ${runners_shm_size}
     pull_policy = "${runners_pull_policy}"
+    dns_search = ["us-west-2.compute.internal"]
   [runners.cache]
     Type = "s3"
     Shared = ${shared_cache}
